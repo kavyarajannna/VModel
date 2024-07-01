@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagram Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 20px;
+        }
+        .box {
+            border: 1px solid #000;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-align: left;
+        }
+        .v-model {
+            grid-column: span 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid red;
+        }
+        .v-model .row {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .v-model .row div {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #ffe4b5;
+        }
+        .v-model .row:first-child div {
+            background-color: #ffcccc;
+        }
+        .v-model .row:last-child div {
+            background-color: #d3f9d8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">ACQ.3 Contract Agreement</div>
+        <div class="box">MAN.3 Project Management</div>
+        <div class="box">MAN.5 Risk Management</div>
+        <div class="box">MAN.6 Measurement</div>
+        <div class="box">ACQ.4 Supplier Monitoring</div>
+        <div class="v-model">
+            <div class="row">
+                <div>SYS.1 Requirements Elicitation</div>
+                <div>SYS.2 System Requirements Analysis</div>
+                <div>SYS.3 System Architectural Design</div>
+            </div>
+            <div class="row">
+                <div>SWE.1 Software Requirements Analysis</div>
+                <div>SWE.2 Software Architectural Design</div>
+                <div>SWE.3 Software Detailed Design and Unit Construction</div>
+            </div>
+            <div class="row">
+                <div>SWE.4 Software Unit Verification</div>
+                <div>SWE.5 Software Integration and Integration Test</div>
+                <div>SWE.6 Software Qualification Test</div>
+            </div>
+        </div>
+        <div class="box">ACQ.11 Technical Requirements</div>
+        <div class="box">SPL.1 Supplier Tendering</div>
+        <div class="box">SUP.1 Quality Assurance</div>
+        <div class="box">SUP.8 Configuration Management</div>
+        <div class="box">SUP.9 Problem Resolution Management</div>
+        <div class="box">SUP.7 Documentation</div>
+        <div class="box">SPL.2 Product Release</div>
+        <div class="box">ACQ.12 Legal and Administrative Requirements</div>
+        <div class="box">ACQ.13 Project Requirements</div>
+        <div class="box">ACQ.14 Request for Proposals</div>
+        <div class="box">ACQ.15 Supplier Qualification</div>
+        <div class="box">REU.2 Reuse Program Management</div>
+        <div class="box">PIM.3 Process Improvement</div>
+    </div>
+</body>
+</html>
